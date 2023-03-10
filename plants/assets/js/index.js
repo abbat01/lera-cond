@@ -368,7 +368,7 @@ for (let i = 0; i < serviceButtons.length; i++) {
             if(el.classList.contains('planting')) {
               el.classList.remove('noise')
             }
-          })
+          }) 
         }
         
         
