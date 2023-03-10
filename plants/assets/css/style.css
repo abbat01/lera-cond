@@ -212,6 +212,8 @@ body {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   color: #000000;
   text-decoration: none;
   transform: translate(0px, -4px);
@@ -533,7 +535,7 @@ body {
 .prices-wrapper .price-menu details[open] .price-btn {
   text-decoration: none;
   display: block;
-  width: 85px;
+  width: 100px;
   margin-left: 39px;
   padding: 3px 20px;
   background-color: #fff;
