@@ -623,6 +623,23 @@ body {
   transform: translate(-2px, -2px);
 }
 
+.author-contacts {
+  margin-top: 50px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.author-contacts p {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.author-contacts p + p {
+  margin-top: 10px;
+}
+
 .custom-select {
   -webkit-appearance: none;
   -moz-appearance: none;

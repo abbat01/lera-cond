@@ -177,18 +177,18 @@ for (i = 0; i < l; i++) {
             let testD = document.createElement('div');
             let selImg = document.querySelector('.contacts-wrapper');
             testD.setAttribute('class', 'selected-city__left');
-            testD.innerHTML = `<p>City:</p><p>Phone:</p><p class="selected-city__office">Office adress:</p>`;
+            testD.innerHTML = `<p>Город:</p><p>Телефон:</p><p class="selected-city__office">Адрес:</p>`;
             let testC = document.createElement('div')
             testC.setAttribute('class', 'selected-city__right');
-            testC.innerHTML = `<p>${res.value}</p><p>${res.value === 'Canandaigua, NY' ? '+1585	3930001' : res.value === 'New York City' ? '+12124560002' : res.value === 'Yonkers, NY' ? '+19146780003' : res.value === 'Sherrill, NY' ? '+13159080004' : false}</p><p class="selected-city__office">${res.value === 'Canandaigua, NY' ? '151 Charlotte Street' : res.value === 'New York City' ? '9 East 91st Street' : res.value === 'Yonkers, NY' ? '511 Warburton Ave' : res.value === 'Sherrill, NY' ? '14 WEST Noyes BLVD' : false}</p><a href="tel:${res.value === 'Canandaigua, NY' ? '+15853930001' : res.value === 'New York City' ? '+12124560002' : res.value === 'Yonkers, NY' ? '+19146780003' : res.value === 'Sherrill, NY' ? '+13159080004' : false}" class="button tel">Call us</a>`;
+            testC.innerHTML = `<p>${res.value}</p><p>${res.value === 'Минск' ? '+37544123-23-23' : res.value === 'Барановичи' ? '+37544123-23-23' : res.value === 'Пинск' ? '+37544123-23-23' : res.value === 'Брест' ? '+37544123-23-23' : false}</p><p class="selected-city__office">${res.value === 'Минск' ? 'ул. Пушкина, 18' : res.value === 'Барановичи' ? 'ул. Центральная, 20' : res.value === 'Пинск' ? 'ул. Франциска Скорины, 2' : res.value === 'Брест' ? 'ул. Пинская, 1' : false}</p><a href="tel:${res.value === 'Минск' ? '+37544123-23-23' : res.value === 'Барановичи' ? '+37544123-23-23' : res.value === 'Пинск' ? '+37544123-23-23' : res.value === 'Брест' ? '+37544123-23-23' : false}" class="button tel">Позвонить</a>`;
             
             if(!!document.querySelector('.selected-city')) {
                 testB = document.querySelector('.selected-city');
                 while (testB.firstChild) {
                     testB.removeChild(testB.firstChild);
                   }
-                testD.innerHTML = `<p>City:</p><p>Phone:</p><p class="selected-city__office">Office adress:</p>`;
-                testC.innerHTML = `<p>${res.value}</p><p>${res.value === 'Canandaigua, NY' ? '+15853930001' : res.value === 'New York City' ? '+12124560002' : res.value === 'Yonkers, NY' ? '+19146780003' : res.value === 'Sherrill, NY' ? '+13159080004' : false}</p><p class="selected-city__office">${res.value === 'Canandaigua, NY' ? '151 Charlotte Street' : res.value === 'New York City' ? '9 East 91st Street' : res.value === 'Yonkers, NY' ? '511 Warburton Ave' : res.value === 'Sherrill, NY' ? '14 WEST Noyes BLVD' : false}</p><a href="tel:${res.value === 'Canandaigua, NY' ? '+15853930001' : res.value === 'New York City' ? '+12124560002' : res.value === 'Yonkers, NY' ? '+19146780003' : res.value === 'Sherrill, NY' ? '+13159080004' : false}" class="button tel  ">Call us</a>`;
+                testD.innerHTML = `<p>Город:</p><p>Телефон:</p><p class="selected-city__office">Адрес:</p>`;
+                testC.innerHTML = `<p>${res.value}</p><p>${res.value === 'Минск' ? '+37544123-23-23' : res.value === 'Барановичи' ? '+37544123-23-23' : res.value === 'Пинск' ? '+37544123-23-23' : res.value === 'Брест' ? '+37544123-23-23' : false}</p><p class="selected-city__office">${res.value === 'Минск' ? 'ул. Пушкина, 18' : res.value === 'Барановичи' ? 'ул. Центральная, 20' : res.value === 'Пинск' ? 'ул. Франциска Скорины, 2' : res.value === 'Брест' ? 'ул. Пинская, 1' : false}</p><a href="tel:${res.value === 'Минск' ? '+37544123-23-23' : res.value === 'Барановичи' ? '+37544123-23-23' : res.value === 'Пинск' ? '+37544123-23-23' : res.value === 'Брест' ? '+37544123-23-23' : false}" class="button tel">Позвонить</a>`;
                 testB.appendChild(testD);
                 testB.appendChild(testC);
                 if(window.innerWidth < 500) {
