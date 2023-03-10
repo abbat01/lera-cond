@@ -349,7 +349,7 @@ for (let i = 0; i < serviceButtons.length; i++) {
         
 
 
-        if(serviceButtons[i].innerHTML === 'Cake') {
+        if(serviceButtons[i].innerHTML === 'Cakes') {
           arrayCards.forEach(el => {
             if(el.classList.contains('gardens')) {
               el.classList.remove('noise')
@@ -372,7 +372,7 @@ for (let i = 0; i < serviceButtons.length; i++) {
         }
         
         
-        if(nowActive[0].innerHTML === 'Gardens') {
+        if(nowActive[0].innerHTML === 'Cakes') {
           arrayCards.forEach(el => el.classList.add('noise'))
           arrayCards.forEach(el => {
             if(el.classList.contains('gardens')) {
@@ -380,7 +380,7 @@ for (let i = 0; i < serviceButtons.length; i++) {
             }
           })
         }
-        if(nowActive[0].innerHTML === 'Lawn') {
+        if(nowActive[0].innerHTML === 'Cupcakes') {
           arrayCards.forEach(el => el.classList.add('noise'))
           arrayCards.forEach(el => {
             if(el.classList.contains('lawn')) {
@@ -388,7 +388,7 @@ for (let i = 0; i < serviceButtons.length; i++) {
             }
           })
         }
-        if(nowActive[0].innerHTML === 'Planting') {
+        if(nowActive[0].innerHTML === 'Buns') {
           arrayCards.forEach(el => el.classList.add('noise'))
           arrayCards.forEach(el => {
             if(el.classList.contains('planting')) {
@@ -401,19 +401,19 @@ for (let i = 0; i < serviceButtons.length; i++) {
         arrayCards.forEach(el => el.classList.remove('noise'))
 
 
-        if(nowActive[0].innerHTML === 'Gardens' && nowActive[1].innerHTML === 'Lawn') {
+        if(nowActive[0].innerHTML === 'Cakes' && nowActive[1].innerHTML === 'Cupcakes') {
           arrayCards.forEach(el => {
             if (el.classList.contains('planting')) {el.classList.add('noise')}
           })
         }
 
-        if(nowActive[0].innerHTML === 'Gardens' && nowActive[1].innerHTML === 'Planting') {
+        if(nowActive[0].innerHTML === 'Cakes' && nowActive[1].innerHTML === 'Buns') {
           arrayCards.forEach(el => {
             if (el.classList.contains('lawn')) {el.classList.add('noise')}
           })
         }
 
-        if(nowActive[0].innerHTML === 'Lawn' && nowActive[1].innerHTML === 'Planting') {
+        if(nowActive[0].innerHTML === 'Cupcakes' && nowActive[1].innerHTML === 'Buns') {
           arrayCards.forEach(el => {
             if (el.classList.contains('gardens')) {el.classList.add('noise')}
           })
